@@ -13,6 +13,10 @@ export default function IndexPage({
     return <h1>Loading...</h1>
   }
 
+  console.log(import.meta)
+  console.log(import.meta.env)
+
+
   return (
     <>
       <header className="header">
@@ -41,7 +45,7 @@ export default function IndexPage({
           type="button"
         >
           {/* TODO: Make TS stop yelling about this */}
-          {import.meta.env.TUONO_PUBLIC_TEST_CLIENT}
+          {import.meta.env}
         </a>
       </div>
     </>
